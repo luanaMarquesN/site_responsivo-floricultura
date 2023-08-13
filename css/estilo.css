@@ -1,0 +1,259 @@
+
+
+body {
+    background-color:whitesmoke;
+    font-family: "Calibri", Times, serif;
+    box-sizing: border-box;
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+
+}
+
+
+/***** CONFIGURAÇÃO DO CONTAINER ****/
+#contentor {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: white;
+}
+
+/***** FIM CONFIGURAÇÃO DO CONTAINER ****/
+
+
+/***** CONFIGURAÇÃO DO TOPO ****/
+#topo-site {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 75%;
+    background-color: white;
+
+}
+
+/***** FIM DA CONFIGURAÇÃO DO TOPO ****/
+
+
+/***** CONFIGURAÇÃO DO LOGO DO SITE ****/
+#logo img {
+    width: 250px;
+    height: auto;
+
+}
+
+@media screen and(max-width:315px) {
+    #logo img {
+        width: 200px;
+    }
+}
+
+/***** FIM DA CONFIGURAÇÃO DO LOGO DO SITE ****/
+
+
+/***** CONFIGURAÇÃO DA REDE SOCIAIS ****/
+#rede-sociais img {
+    width: 45px;
+    height: auto;
+    margin-right: 15px;
+    float: right;
+    justify-content: flex-end;
+    margin-top: 5px;
+
+}
+
+@media screen and(max-width:320px) {
+    #redes-sociais img {
+        width: 12%;
+    }
+}
+
+/***** FIM DA CONFIGURAÇÃO DA REDE SOCIAIS ****/
+
+
+/***** CONFIGURAÇÃO DO MENU DO SITE ****/
+.menu_simple {
+    box-sizing: border-box;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: #962E91;
+}
+
+
+.menu_simple ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+
+}
+
+.menu_simple ul li {
+    display: inline;
+}
+
+.menu_simple ul li a {
+    float: left;
+    text-decoration: none;
+    color: #000000;
+    padding: 10.5px 11px;
+    margin-left: 20px;
+}
+
+@media screen and (max-width:945px) {
+    .menu_simple ul li a {
+        display: flex;
+        flex-flow: row wrap;
+        padding: 0px;
+        max-width: 45%;
+    }
+}
+
+.menu_simple ul li a:visited {
+    color: #000000;
+}
+
+.menu_simple ul li a:hover {
+    color: white;
+    background-color: #000000;
+
+
+}
+
+/***** FIM DA CONFIGURAÇÃO DO MENU DO SITE ****/
+
+
+
+/***** CONFIGURAÇÃO DA CAIXA CONTEUDO ****/
+
+.caixa-conteudo h3 {
+    margin-top: 5vh;
+    color: #000000;
+    margin-left: 25px
+}
+
+.caixa-conteudo ul {
+    list-style: none;
+    float: left;
+    color: #000000;
+    margin-top: -8px;
+    margin-left: 1px;
+}
+
+.caixa-conteudo li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/***** FIM CONFIGURAÇÃO DA CAIXA CONTEUDO ****/
+
+
+/***** CONFIGURAÇÃO DO RODAPE DO SITE ****/
+#rodape-site {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 100%;
+    flex-wrap: wrap;
+    max-width: 100%;
+    width: 100%;
+    min-height: 300px;
+    background-color: #962E91;
+
+}
+
+#rodape-site div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    padding: 1rem, 1.5rem;
+    max-height: 256px;
+    margin-right: 32px;
+}
+
+@media screen and (max-width:675px) {
+
+    #rodape-site {
+        min-height: 100%;
+    }
+
+    #rodape-site div h3 ul li {
+        flex-direction: row;
+        margin-right: 0;
+    }
+
+
+
+}
+
+#autor-site {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: #852780;
+    text-align: center;
+    padding-top: 10px;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+/***** FIM CONFIGURAÇÃO DO RODAPE DO SITE ****/
+
+
+/***** CONFIGURAÇÃO DA DIV SOBRE ****/
+#sobre {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: white;
+    float: left;
+}
+
+#foto-sobre {
+    width: 400px;
+    height: 380px;
+    position: relative;
+    float: left;
+    margin-left: 60px;
+    margin-top: 25px;
+    max-width: 100%;
+
+}
+@media screen and (max-width:470px) {
+#foto-sobre{
+  margin-left:5%;
+
+}
+}
+
+#texto-sobre {
+    width: 450px;
+    margin-left: 10px;
+    padding-right: 8px;
+    padding-left: 8px;
+    max-width: 700px;
+    text-align: justify;
+  
+}
+
+
+/***** FIM CONFIGURAÇÃO DO SOBRE ****/
